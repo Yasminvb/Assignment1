@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Mocha Tests</title>
+    <link href="lib/mocha.css" rel="stylesheet" />
+    <style>
+      img {
+        width: 150px;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 👍 YOUR HTML HERE 👍 -->
+    <img
+      id="inn"
+      src="https://media.tenor.com/images/6d613b2a058e17138ff6a668163bb5ab/tenor.gif"
+      alt="inn"
+      onclick="rest"
+    />
+    <img
+      id="dagger"
+      src="https://www.perfectly-nintendo.com/wp-content/gallery/fire-emblem-warriors-18-08-2017/1.jpg"
+      alt="dagger"
+      onclick="pickUpItem"
+    />
+    <img
+      id="bag"
+      src="https://cdn.shopify.com/s/files/1/0708/3841/products/mammoth1_640x.gif?v=1571459966"
+      alt="bag"
+      onclick="equipWeapon"
+    />
+
+    <img
+      id="hero"
+      src="http://upload2.inven.co.kr/upload/2017/12/01/bbs/i15949206354.png"
+      alt="hero"
+      onclick="hero"
+    />
+
+    <!-- <button onclick="inn">Health value is</button> -->
+
+    <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+    <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
+
+    <div id="mocha">
+      <!-- MOCHA TEST FEEDBACK WILL BE RENDERED HERE -->
+    </div>
+
+    <script src="lib/chai.js"></script>
+    <script src="lib/mocha.js"></script>
+    <script src="lib/sinon.js"></script>
+    <script>
+      mocha.setup("bdd");
+    </script>
+    <script src="YOUR_JAVASCRIPT_HERE.js"></script>
+    <script src="lib/game_logic.test.js"></script>
+  </body>
+</html>
