@@ -20,7 +20,7 @@ function pickUpItem(person = hero, weapon = hero.weapon) {
 }
 function equipWeapon(person = hero) {
   if (person.inventory.length == 0);
-  return (person.weapon = person.inventory[0]);
+  return (hero.weapon = person.inventory[0]);
 }
 
 // - Allow people to change the name of their hero, you can use window.prompt or use an input element. Be careful using a form because using a form might refresh the page.
